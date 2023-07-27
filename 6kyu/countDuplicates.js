@@ -2,7 +2,7 @@ function duplicateCount(text){
     const lowerText = text.toLowerCase()
     let obj = {}
     let count = 0;
-    lowerText.split("").reduce((currentVal) => {
+    lowerText.split("").reduce((acc, currentVal) => {
         if (!obj[currentVal])
           {
             obj[currentVal] = 1
